@@ -53,14 +53,59 @@
                     <view key="view" contentMode="scaleToFill" id="rsU-jf-u6m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBw-ep-sPt">
+                                <rect key="frame" x="147.33333333333334" y="405" width="98.333333333333343" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Alert">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showAlert" destination="aiM-Ys-3wD" eventType="touchUpInside" id="jsc-4A-DIO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vws-ZO-XFu">
+                                <rect key="frame" x="63" y="323" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Left"/>
+                                <connections>
+                                    <action selector="changeLabelText:" destination="aiM-Ys-3wD" eventType="touchUpInside" id="zjo-02-Nmf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2g-IX-Yhp">
+                                <rect key="frame" x="281" y="323" width="64" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Right"/>
+                                <connections>
+                                    <action selector="changeLabelText:" destination="aiM-Ys-3wD" eventType="touchUpInside" id="urr-5N-Npu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lH-uF-1B8">
+                                <rect key="frame" x="85" y="282" width="222" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0PO-zh-e8Z"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="RBw-ep-sPt" firstAttribute="centerY" secondItem="rsU-jf-u6m" secondAttribute="centerY" id="ESp-XU-0YD"/>
+                            <constraint firstItem="RBw-ep-sPt" firstAttribute="centerX" secondItem="rsU-jf-u6m" secondAttribute="centerX" id="hUU-Mc-EKQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fK1-Fu-Xua"/>
+                    <connections>
+                        <outlet property="myLabel" destination="6lH-uF-1B8" id="jc6-X2-vmc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHz-Dh-Ouh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="-28"/>
+            <point key="canvasLocation" x="722.90076335877859" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
